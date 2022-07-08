@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
+/* INDEX */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/ti/gratis-vektor/p3/3332126-blue-neon-casino-roulette-on-blue-table-with-poker-chips-draufsicht-vektor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 380px;
+}
+.title {
+    color: #eee;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+.subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+.ic1 {
+    margin-top: 30px;
+}
+.ic2 {
+    margin-top: 25px;
+}
+.input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+.cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+.cut-short {
+    width: 50px;
+}
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+.input:focus ~ .placeholder {
+    color: #dc2f55;
+}
+.validar {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 20px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+.validar:active {
+    background-color: #06b;
+}
+.empezar {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 15px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+.empezar:active {
+    background-color: #06b;
+}
+.disabled {
+    background: #999;
+    color: #555;
+    cursor: not-allowed;
+}
+
+/* RULETA */
+section.flexi-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	width: 100%;
+}
+section .container {
+	width: 100%;
+	height: 100%;
+}
+#carpet {
+	overflow-x: auto;
+	justify-content: unset;
+	background-color: #218964;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	color: white;
+	font-size: 1.2em;
+}
+table tr td,
+table tr th {
+	border: 3px solid #133826;
+	padding: 5px 20px;
+}
+table tr th {
+	background-color: #25a471;
+	font-weight: normal;
+}
+table tr th.hide {
+	border-width: 0px;
+	background-color: #218964;
+}
+
+table tr td.win,
+table tr th.win { border: 5px solid gold; }
+table tr td.odd,
+table tr td.even { width: 50px; }
+
+table tr td.negra { background-color: black; }
+table tr td.roja { background-color: red; }
+
+table tr:nth-last-child(2) { font-size: 1.5em; }
+
+table tr td .bet,
+table tr th .bet { pointer-events: none; }
+
+table tr th.animate,
+table tr td.animate {
+	animation: flash 1s linear 0.3s;
+}
+table tr th.animate .bet.active,
+table tr td.animate .bet.active {
+	background-color: green;
+	border-color: green;
+}
+
+.rombo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+	margin: 10px;
+}
+.rombo div:nth-child(1) {
+	width: 15px;
+	height: 15px;
+	transform: rotate(45deg);
+}
+.rombo.red div:nth-child(1)  { background-color: red; }
+.rombo.black div:nth-child(1)  { background-color: black; }
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0px;
+}
+
+#juegoInfo {
+	background-color: rgba(0,0,0, 0.5);
+	margin-bottom: 20px;
+	padding: 20px 0;
+	width: 100%;
+	color: white;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.num_ruleta{
+    text-align: center;
+}
+.sale_el{
+    font-size: 40px;
+}
+#num_ruleta{
+    font-weight: 700;
+    font-size: 60px;
+    padding-bottom: 25px;
+}
+
+.logo{
+    padding-bottom: 5px;
+    width: 200px;
+}
+
+#exit{
+    background-image: url(https://t3.ftcdn.net/jpg/02/84/65/12/240_F_284651274_TodDY90ZPQaVSuOaBLTRhPjw8AP3ib61.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fin_del_juego{
+<<<<<<< HEAD
+    background-color: #15172b85;
+=======
+    background-color: #15172bad;
+>>>>>>> b5d62ab31f1e87a23c593583b83bff145acbe9cd
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: rgb(235, 235, 235);
+}
+#fin_del_juego h1{
+    padding-top: 100px;
+    font-size: 50px;
+    color: red;
+}
+#fin_del_juego h3{
+    padding-top: 20px;
+<<<<<<< HEAD
+}
+
+.btn_admin{
+    background-color: rgb(119, 7, 163);
+=======
+>>>>>>> b5d62ab31f1e87a23c593583b83bff145acbe9cd
+}
