@@ -29,12 +29,6 @@ function validacion_datos_usuario(){
 
 btn_empezar.addEventListener('click', guardar_datos_usuario);
 function guardar_datos_usuario(){
-<<<<<<< HEAD
-=======
-    let nombre=document.getElementById('nombre');
-    let apellido=document.getElementById('apellido');
-    let edad=document.getElementById('edad');
->>>>>>> b5d62ab31f1e87a23c593583b83bff145acbe9cd
     sessionStorage.setItem("Nombre jugador", nombre.value);
     sessionStorage.setItem("Apellido jugador", apellido.value);
     sessionStorage.setItem("Edad jugador", edad.value);

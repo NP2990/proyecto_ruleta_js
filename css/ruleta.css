@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
 
 /* INDEX */
 
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
 }
 body {
     align-items: center;
@@ -15,9 +17,8 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
 }
+
 .form {
     background-color: #15172b;
     border-radius: 20px;
@@ -158,69 +159,44 @@ section .container {
 	height: 100%;
 }
 #carpet {
-	overflow-x: auto;
-	justify-content: unset;
+	justify-self: center;
 	background-color: #218964;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+#juegoInfo {
+	background-color: rgba(0,0,0, 0.5);
+	margin-bottom: 20px;
+    padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	flex-direction: column;
 }
 table {
 	width: 100%;
 	border-collapse: collapse;
 	color: white;
-	font-size: 1.2em;
-}
-table tr td,
-table tr th {
-	border: 3px solid #133826;
-	padding: 5px 20px;
 }
 table tr th {
+	border: 3px solid #D4AF37;
+    width: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-content: center;
 	background-color: #25a471;
-	font-weight: normal;
 }
 table tr th.hide {
 	border-width: 0px;
 	background-color: #218964;
 }
 
-table tr td.win,
-table tr th.win { border: 5px solid gold; }
-table tr td.odd,
-table tr td.even { width: 50px; }
+table tr th.negra { background-color: black; }
+table tr th.roja { background-color: red; }
 
-table tr td.negra { background-color: black; }
-table tr td.roja { background-color: red; }
-
-table tr:nth-last-child(2) { font-size: 1.5em; }
-
-table tr td .bet,
-table tr th .bet { pointer-events: none; }
-
-table tr th.animate,
-table tr td.animate {
-	animation: flash 1s linear 0.3s;
+.cero{
+    background-color: green;
+    width: 35px;
 }
-table tr th.animate .bet.active,
-table tr td.animate .bet.active {
-	background-color: green;
-	border-color: green;
-}
-
-.rombo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	pointer-events: none;
-	margin: 10px;
-}
-.rombo div:nth-child(1) {
-	width: 15px;
-	height: 15px;
-	transform: rotate(45deg);
-}
-.rombo.red div:nth-child(1)  { background-color: red; }
-.rombo.black div:nth-child(1)  { background-color: black; }
 .col {
 	display: flex;
 	flex-direction: column;
@@ -237,15 +213,6 @@ table tr td.animate .bet.active {
 	padding: 10px 0px;
 }
 
-#juegoInfo {
-	background-color: rgba(0,0,0, 0.5);
-	margin-bottom: 20px;
-	padding: 20px 0;
-	width: 100%;
-	color: white;
-	justify-content: space-between;
-	flex-direction: column;
-}
 .num_ruleta{
     text-align: center;
 }
@@ -271,11 +238,7 @@ table tr td.animate .bet.active {
 }
 
 #fin_del_juego{
-<<<<<<< HEAD
     background-color: #15172b85;
-=======
-    background-color: #15172bad;
->>>>>>> b5d62ab31f1e87a23c593583b83bff145acbe9cd
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -288,11 +251,88 @@ table tr td.animate .bet.active {
 }
 #fin_del_juego h3{
     padding-top: 20px;
-<<<<<<< HEAD
 }
 
 .btn_admin{
     background-color: rgb(119, 7, 163);
-=======
->>>>>>> b5d62ab31f1e87a23c593583b83bff145acbe9cd
+}
+
+.btn{
+    height: 40px;
+    width: 70px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+}
+
+.jugada{
+    background-color: #25a471;
+    font-size: 16px;
+}
+
+.jugadaRoja{
+    margin-top: 5px;
+    background-color: #25a471;
+    color: red;
+}
+
+.jugadaNegra{
+    margin-top: 5px;
+    background-color: #25a471;
+    color: black;
+}
+.retirarse{
+    background-color: #10704a;
+}
+.retiro{
+    background-color: #10704a;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ultimaColumna{
+    width: 80px;
+}
+
+.swalGana{
+    color: green;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.swalPierde{
+    color: red;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: .5rem;
+    background-color: #121924;
+    color: rgb(114, 114, 114);
+    text-align: center;
+}
+footer span{
+    font-weight: 700;
 }

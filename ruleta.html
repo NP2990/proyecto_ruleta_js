@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La rula - Nicolás Pérez</title>
     <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/151205/isolated/lists/8857efb275fbf2435db40a222d05b1e6-icono-de-rueda-de-ruleta.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="./css/ruleta.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <section>
@@ -16,109 +18,102 @@
                 <table>
                     <tbody>
                         <tr>
-                            <th rowspan="3"><button class="numero_pleno" value="0">0</button></th>
-                            <td class="roja"><button class="numero_pleno" value="3">3</button></td>
-                            <td class="negra"><button class="numero_pleno" value="6">6</button></td>
-                            <td class="roja"><button class="numero_pleno" value="9">9</button></td>
-                            <td class="roja"><button class="numero_pleno" value="12">12</button></td>
-                            <td class="negra"><button class="numero_pleno" value="15">15</button></td>
-                            <td class="roja"><button class="numero_pleno" value="18">18</button></td>
-                            <td class="roja"><button class="numero_pleno" value="21">21</button></td>
-                            <td class="negra"><button class="numero_pleno" value="24">24</button></td>
-                            <td class="roja"><button class="numero_pleno" value="27">27</button></td>
-                            <td class="roja"><button class="numero_pleno" value="30">30</button></td>
-                            <td class="negra"><button class="numero_pleno" value="33">33</button></td>
-                            <td class="roja"><button class="numero_pleno" value="36">36</button></td>
-                            <th><button class="columna" value="columna3">2 to 1</button></th>
+                            <th class="cero" rowspan="3"><button class="numero_pleno btn green" value="0">0</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="3">3</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="6">6</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="9">9</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="12">12</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="15">15</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="18">18</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="21">21</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="24">24</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="27">27</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="30">30</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="33">33</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="36">36</button></th>
+                            <th class="ultimaColumna"><button class="columna btn jugada" value="columna3">2 to 1</button></th>
                         </tr>
                         <tr>
-                            <td class="negra"><button class="numero_pleno" value="2">2</button></td>
-                            <td class="roja"><button class="numero_pleno" value="5">5</button></td>
-                            <td class="negra"><button class="numero_pleno" value="8">8</button></td>
-                            <td class="negra"><button class="numero_pleno" value="11">11</button></td>
-                            <td class="roja"><button class="numero_pleno" value="14">14</button></td>
-                            <td class="negra"><button class="numero_pleno" value="17">17</button></td>
-                            <td class="negra"><button class="numero_pleno" value="20">20</button></td>
-                            <td class="roja"><button class="numero_pleno" value="23">23</button></td>
-                            <td class="negra"><button class="numero_pleno" value="26">26</button></td>
-                            <td class="negra"><button class="numero_pleno" value="29">29</button></td>
-                            <td class="roja"><button class="numero_pleno" value="32">32</button></td>
-                            <td class="negra"><button class="numero_pleno" value="35">35</button></td>
-                            <th><button class="columna" value="columna2">2 to 1</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="2">2</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="5">5</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="8">8</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="11">11</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="14">14</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="17">17</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="20">20</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="23">23</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="26">26</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="29">29</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="32">32</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="35">35</button></th>
+                            <th class="ultimaColumna"><button class="columna btn jugada" value="columna2">2 to 1</button></th>
                         </tr>
                         <tr>
-                            <td class="roja"><button class="numero_pleno" value="1">1</button></td>
-                            <td class="negra"><button class="numero_pleno" value="4">4</button></td>
-                            <td class="roja"><button class="numero_pleno" value="7">7</button></td>
-                            <td class="negra"><button class="numero_pleno" value="10">10</button></td>
-                            <td class="negra"><button class="numero_pleno" value="13">13</button></td>
-                            <td class="roja"><button class="numero_pleno" value="16">16</button></td>
-                            <td class="roja"><button class="numero_pleno" value="19">19</button></td>
-                            <td class="negra"><button class="numero_pleno" value="22">22</button></td>
-                            <td class="roja"><button class="numero_pleno" value="25">25</button></td>
-                            <td class="negra"><button class="numero_pleno" value="28">28</button></td>
-                            <td class="negra"><button class="numero_pleno" value="31">31</button></td>
-                            <td class="roja"><button class="numero_pleno" value="34">34</button></td>
-                            <th><button class="columna" value="columna1">2 to 1</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="1">1</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="4">4</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="7">7</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="10">10</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="13">13</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="16">16</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="19">19</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="22">22</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="25">25</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="28">28</button></th>
+                            <th class="negra"><button class="numero_pleno btn black" value="31">31</button></th>
+                            <th class="roja"><button class="numero_pleno btn red" value="34">34</button></th>
+                            <th class="ultimaColumna"><button class="columna btn jugada" value="columna1">2 to 1</button></th>
                         </tr>
                         <tr>
                             <th class="hide"></th>
-                            <th><button class="linea" value="linea1">17 to 1</button></th>
-                            <th><button class="linea" value="linea2">17 to 1</button></th>
-                            <th><button class="linea" value="linea3">17 to 1</button></th>
-                            <th><button class="linea" value="linea4">17 to 1</button></th>
-                            <th><button class="linea" value="linea5">17 to 1</button></th>
-                            <th><button class="linea" value="linea6">17 to 1</button></th>
-                            <th><button class="linea" value="linea7">17 to 1</button></th>
-                            <th><button class="linea" value="linea8">17 to 1</button></th>
-                            <th><button class="linea" value="linea9">17 to 1</button></th>
-                            <th><button class="linea" value="linea10">17 to 1</button></th>
-                            <th><button class="linea" value="linea11">17 to 1</button></th>
-                            <th><button class="linea" value="linea12">17 to 1</button></th>
-                            <th rowspan="3"><a href="exit.html"><button id="btn_retirarse" value="retirarse">Retirarse</button></a></th>
+                            <th><button class="linea btn jugada" value="linea1">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea2">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea3">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea4">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea5">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea6">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea7">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea8">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea9">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea10">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea11">17 to 1</button></th>
+                            <th><button class="linea btn jugada" value="linea12">17 to 1</button></th>
+                            <th class="retirarse" rowspan="3"><a href="exit.html"><button id="btn_retirarse" class="btn retiro" value="retirarse">RETIRARSE</button></a></th>
                         </tr>
                         <tr>
                             <th rowspan="2" class="hide"></th>
-                            <th colspan="4"><button class="docena" value="docena1">1st 12</button></th>
-                            <th colspan="4"><button class="docena" value="docena2">2nd 12</button></th>
-                            <th colspan="4"><button class="docena" value="docena3">3rd 12</button></th>
-                            <th rowspan="2" class="hide"></th>
+                            <th colspan="4"><button class="docena btn jugada" value="docena1">1st 12</button></th>
+                            <th colspan="4"><button class="docena btn jugada" value="docena2">2nd 12</button></th>
+                            <th colspan="4"><button class="docena btn jugada" value="docena3">3rd 12</button></th>
                         </tr>
                         <tr>
-                            <th colspan="2"><button class="mitad" value="mitad1">1 - 18</button></th>
-                            <th colspan="2"><button class="par_impar" value="par">Par</button></th>
+                            <th colspan="2"><button class="mitad btn jugada" value="mitad1">1 - 18</button></th>
+                            <th colspan="2"><button class="par_impar btn jugada" value="par">Par</button></th>
                             <th colspan="2">
-                                <div class="rombo red">
-                                    <div></div>
-                                </div>
-                                <button class="color" value="rojas">Rojas</button>
+                                <button class="color btn jugadaRoja" value="rojas"><img src="https://i.ibb.co/2yfNmyJ/rombo-Rojo.png" alt="Rojas" width="40px"></button>
                             </th>
                             <th colspan="2">
-                                <div class="rombo black">
-                                    <div></div>
-                                </div>
-                                <button class="color" value="negras">Negras</button>
+                                <button class="color btn jugadaNegra" value="negras"><img src="https://i.ibb.co/54hmV5B/rombo-Negro.png" alt="Negras" width="40px"></button>
                             </th>
-                            <th colspan="2"><button class="par_impar" value="impar">Impar</button></th>
-                            <th colspan="2"><button class="mitad" value="mitad2">19 - 36</button></th>
+                            <th colspan="2"><button class="par_impar btn jugada" value="impar">Impar</button></th>
+                            <th colspan="2"><button class="mitad btn jugada" value="mitad2">19 - 36</button></th>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="row" id="juegoInfo">
-                <div class="num_ruleta">
-                    <div class="sale_el">Salió el</div>
-                    <div id="num_ruleta"> >> <span id="span_num_ruleta">0</span> << </div>
-                </div>
                 <div id="cantidad_jugadas">Cantidad de jugadas: <span id="span_jugadas">0</span></div>
-                <div id="apuesta_usuario">Apuesta del usuario: $<span id="span_apuesta">0</span></div>
+                <div id="apuesta_usuario">¿Ganando o perdiendo?: $<span id="span_apuesta">0</span></div>
                 <div id="balance_total">Balance total: $<span id="span_balance">10000</span></div>
             </div>
         </div>        
     </section>
 
+    <footer><p>Currito creado por <span>Nicolás Pérez</span></p></footer>
+
+    <script src="sweetalert2.all.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
+        
     <script src="./js/juegoRuleta/variables_constantes.js"></script>
     <script src="./js/juegoRuleta/funciones_ruleta.js"></script>
     <script src="./js/juegoRuleta/juegos_ruleta.js"></script>

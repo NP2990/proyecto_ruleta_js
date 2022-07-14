@@ -2,7 +2,6 @@
 window.addEventListener("load", function() {
     document.querySelector("#span_nombre_usuario_final").innerText = sessionStorage.getItem("Nombre jugador");
     document.querySelector("#span_jugadas_final").innerText = sessionStorage.getItem("Jugadas_realizadas");
-<<<<<<< HEAD
     document.querySelector("#span_balance_final").innerText = sessionStorage.getItem("Balance_final");
 
     let final_juego_usuario = [];
@@ -26,7 +25,3 @@ function recuperar_datos_final(){
 
 let btn_recuperar=document.getElementById('recuperar_datos_user');
 btn_recuperar.addEventListener('click', recuperar_datos_final);
-=======
-    document.querySelector("#span_balance_final").innerText = sessionStorage.getItem("Balance_final");;
-});
->>>>>>> b5d62ab31f1e87a23c593583b83bff145acbe9cd

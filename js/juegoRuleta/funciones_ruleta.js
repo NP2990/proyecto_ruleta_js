@@ -4,35 +4,68 @@ function numero_ruleta(){
 
 // PREMIOS
 function premio_pleno(){
+    console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=(APUESTA_ESTANDAR*37);
-    BALANCE+=(APUESTA_ESTANDAR*37);}
+    BALANCE+=(APUESTA_ESTANDAR*37);
+    alerta_gana()}
 
 function premio_docena_columna(){
+    console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=(APUESTA_ESTANDAR*2);
-    BALANCE+=(APUESTA_ESTANDAR*2);}
+    BALANCE+=(APUESTA_ESTANDAR*2);
+    alerta_gana()}
 
 function premio_linea(){
+    console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=(APUESTA_ESTANDAR*17);
-    BALANCE+=(APUESTA_ESTANDAR*17);}
+    BALANCE+=(APUESTA_ESTANDAR*17);
+    alerta_gana()}
 
 function premio_simple(){
+    console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=APUESTA_ESTANDAR;
-    BALANCE+=APUESTA_ESTANDAR;}
+    BALANCE+=APUESTA_ESTANDAR;
+    alerta_gana()}
 
 function perdida_jugada(){
+    console.log("USUARIO PIERDE");
     GANANCIA_PERDIDA-=APUESTA_ESTANDAR;
-    BALANCE-=APUESTA_ESTANDAR;}
+    BALANCE-=APUESTA_ESTANDAR;
+    alerta_pierde()}
 
-function verificar_balance(){
-    if(BALANCE==0){
-        window.open("exit.html","_self");
-        guardar_datos_juego();
+//ALERTAS DEL JUEGO (Sweet Alert)
+function alerta_gana(){
+    Swal.fire({
+        title: '¡No va más! Sale el ' + N_RULETA,
+        html: '<h1 class="swalGana">GANASTE</h1>',
+        heightAuto: false,
+        background: '#082132',
+        color: 'white',
+        confirmButtonText: '¡Vamos!',
+        confirmButtonColor: '#08d',
+    })}
+
+function alerta_pierde(){
+    Swal.fire({
+        title: '¡No va más! Sale el ' + N_RULETA,
+        html: '<h1 class="swalPierde">PERDISTE</h1>',
+        heightAuto: false,
+        background: '#082132',
+        color: 'white',
+        confirmButtonText: '¡Mierda!',
+        confirmButtonColor: '#08d',
+    })}
+
+//VERIFICACION MONEDAS URUARIO
+    function verificar_balance(){
+        if(BALANCE==0){
+            window.open("exit.html","_self");
+            guardar_datos_juego();
+        }
     }
-}
 
 // ACTUALIZAR DATOS DE JUEGO
 function actualizar_info_juego(){
-    document.querySelector("#num_ruleta span").innerText = N_RULETA;
     document.querySelector("#cantidad_jugadas span").innerText = CANTIDAD_JUGADAS;
     document.querySelector("#apuesta_usuario span").innerText = GANANCIA_PERDIDA;
     document.querySelector("#balance_total span").innerText = BALANCE;}
