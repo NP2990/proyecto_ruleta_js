@@ -323,15 +323,12 @@ table tr th.roja { background-color: red; }
     font-size: 80px;
 }
 
-<<<<<<< HEAD
 .swalPierde{
     color: red;
     font-weight: 400;
     font-size: 40px;
 }
 
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
 footer{
     position: absolute;
     right: 0;
@@ -344,12 +341,9 @@ footer{
 }
 footer span{
     font-weight: 700;
-<<<<<<< HEAD
 }
 
 .btnConfirmSWAL{
     text-decoration: none;
     color: #808097;
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
 }

@@ -13,10 +13,6 @@ function juego_pleno(){
     console.log("NUMERO JUGADO USUARIO: ",numero_jugado);
     //4) VERIFICAR IGUALDAD ENTRE RULETA Y USUARIO
     numero_jugado==N_RULETA ? premio_pleno() : perdida_jugada();
-<<<<<<< HEAD
-=======
-    actualizar_info_juego();
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
 }
 
 // JUEGO COLUMNA (2 a 1)

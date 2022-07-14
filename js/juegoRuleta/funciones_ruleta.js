@@ -7,50 +7,35 @@ function premio_pleno(){
     console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=(APUESTA_ESTANDAR*37);
     BALANCE+=(APUESTA_ESTANDAR*37);
-<<<<<<< HEAD
     actualizar_info_juego();
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
     alerta_gana()}
 
 function premio_docena_columna(){
     console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=(APUESTA_ESTANDAR*2);
     BALANCE+=(APUESTA_ESTANDAR*2);
-<<<<<<< HEAD
     actualizar_info_juego();
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
     alerta_gana()}
 
 function premio_linea(){
     console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=(APUESTA_ESTANDAR*17);
     BALANCE+=(APUESTA_ESTANDAR*17);
-<<<<<<< HEAD
     actualizar_info_juego();
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
     alerta_gana()}
 
 function premio_simple(){
     console.log("USUARIO GANA");
     GANANCIA_PERDIDA+=APUESTA_ESTANDAR;
     BALANCE+=APUESTA_ESTANDAR;
-<<<<<<< HEAD
     actualizar_info_juego();
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
     alerta_gana()}
 
 function perdida_jugada(){
     console.log("USUARIO PIERDE");
     GANANCIA_PERDIDA-=APUESTA_ESTANDAR;
     BALANCE-=APUESTA_ESTANDAR;
-<<<<<<< HEAD
     actualizar_info_juego();
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
     alerta_pierde()}
 
 //ALERTAS DEL JUEGO (Sweet Alert)
@@ -76,7 +61,6 @@ function alerta_pierde(){
         confirmButtonColor: '#08d',
     })}
 
-<<<<<<< HEAD
 //RETIRO VOLUNTARIO USER Y STORAGE DATOS JUEGO
 function alerta_retiro(){
     guardar_datos_juego();
@@ -95,8 +79,6 @@ function alerta_retiro(){
         confirmButtonColor: '#bcbcbc',
     })}
 
-=======
->>>>>>> e368459e8cc0721eb9c5e85d32f0097e2876030f
 //VERIFICACION MONEDAS URUARIO
     function verificar_balance(){
         if(BALANCE==0){
