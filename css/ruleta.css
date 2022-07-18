@@ -246,6 +246,7 @@ table tr th.roja { background-color: red; }
 }
 #fin_del_juego h1{
     padding-top: 100px;
+    font-weight: 500;
     font-size: 50px;
     color: red;
 }
@@ -253,8 +254,8 @@ table tr th.roja { background-color: red; }
     padding-top: 20px;
 }
 
-.btn_admin{
-    background-color: rgb(119, 7, 163);
+.admin{
+    background-color: #dc2f55;
 }
 
 .btn{
@@ -323,12 +324,6 @@ table tr th.roja { background-color: red; }
     font-size: 80px;
 }
 
-.swalPierde{
-    color: red;
-    font-weight: 400;
-    font-size: 40px;
-}
-
 footer{
     position: absolute;
     right: 0;
@@ -346,4 +341,71 @@ footer span{
 .btnConfirmSWAL{
     text-decoration: none;
     color: #808097;
+}
+
+#panelAdmin{
+    background-image: url(https://wallpaperaccess.com/full/16677.jpg);
+    display:block;
+    
+}
+
+#botonesPA{
+    display:flex;
+    justify-content: center;
+}
+
+.containerPA {
+    padding: 2px 16px;
+    color: white;
+}
+
+.tabla_jugadores{
+    color: white;
+    text-align: center;
+}
+
+.header_tabla{
+    background-color: #06b;
+    border-color: white;
+    text-align: center;
+}
+
+.hID{
+    width: 10%;
+}
+.hNombre{
+    width: 20%;
+}
+.hApellido{
+    width: 20%;
+}
+.hEdad{
+    width: 10%;
+}
+.hGanPerd{
+    width: 20%;
+}
+.hDinero{
+    width: 20%;
+}
+
+.titulo_admin{
+    color: #D4AF37;
+}
+
+.btn_admin{
+    margin: 10px;
+    background-color: rgb(119, 7, 163);
+    width: 200px;
+}
+
+.btn_fetch{
+    margin: 10px;
+    background-color: rgb(163, 7, 111);
+    width: 200px;
+}
+
+.btn_inicio{
+    margin: 10px;
+    width: 200px;
 }

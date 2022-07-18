@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nico",
+    "apellido": "Perez",
+    "edad": "31 pero arruinado",
+    "gananciaperdida": "En la miseria",
+    "dinero": "-$47 en la sube"
+  },
+  {
+    "id": 2,
+    "nombre": "Juan",
+    "apellido": "De los Palotes",
+    "edad": "78 años",
+    "gananciaperdida": "+ 60.000",
+    "dinero": "Se compra una casa al contado"
+  },
+  {
+    "id": 3,
+    "nombre": "Debora",
+    "apellido": "Chistefacil",
+    "edad": "En sus 30s",
+    "gananciaperdida": "Ni fu ni fa",
+    "dinero": "En la fina línea de la clase media"
+  }
+]

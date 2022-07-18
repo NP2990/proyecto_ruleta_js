@@ -16,12 +16,3 @@ window.addEventListener("load", function() {
     final_juego_usuario.push(cliente_final_json);
     localStorage.setItem("Cliente",final_juego_usuario);
 });
-
-function recuperar_datos_final(){
-    let recuperar_cliente_final_json=localStorage.getItem("Cliente");
-    recuperar_cliente_final_json=JSON.parse(recuperar_cliente_final_json);
-    console.log(recuperar_cliente_final_json)
-}
-
-let btn_recuperar=document.getElementById('recuperar_datos_user');
-btn_recuperar.addEventListener('click', recuperar_datos_final);

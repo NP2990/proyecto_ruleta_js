@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La rula - Nicolás Pérez</title>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/151205/isolated/lists/8857efb275fbf2435db40a222d05b1e6-icono-de-rueda-de-ruleta.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/ruleta.css">
+</head>
+
+<body id="panelAdmin">
+    <div class="containerPA">
+        <div class="row">
+            <div class="col">
+                <h2 class="titulo_admin">Listado de datos</h2>
+                <div class="my-6">
+                    <table class="tabla_jugadores table" id="lista-jugadores">
+                        <thead>
+                            <tr>
+                                <th class="header_tabla hID" scope="col">ID</th>
+                                <th class="header_tabla hNombre" scope="col">Nombre</th>
+                                <th class="header_tabla hApellido" scope="col">Apellido</th>
+                                <th class="header_tabla hEdad" scope="col">Edad</th>
+                                <th class="header_tabla hGanPerd" scope="col">Ganancia/Perdida</th>
+                                <th class="header_tabla hDinero" scope="col">Dinero</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="botonesPA">
+        <button type="text" id="recuperar_datos_user" class="empezar btn_admin" formaction="">DATOS CONSOLA</button>
+        <button type="text" id="recuperar_datos_fetch" class="empezar btn_fetch" formaction="">DATOS FETCH</button>
+        <a href="index.html"><button type="text" class="empezar btn_inicio" formaction="">Volver al inicio</button></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+    <script src="./js/datosJuegoUser/panel_admin.js"></script>
+
+</body>
+
+</html>
