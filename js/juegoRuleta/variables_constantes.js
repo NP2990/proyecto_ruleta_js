@@ -1,5 +1,5 @@
 let balance = 10000;
-let apuesta_estandar = 0;
+let apuesta_estandar = 1000;
 
 let cantidad_jugadas = 0;
 let ganancia_perdida = 0;
