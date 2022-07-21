@@ -1,5 +1,5 @@
 let balance = 10000;
-let apuesta_estandar = 1000;
+let apuesta_estandar = 0;
 
 let cantidad_jugadas = 0;
 let ganancia_perdida = 0;
@@ -24,7 +24,7 @@ const JUEGOS_RULETA = {
     linea9 : [25,26,27],
     linea10 : [28,29,30],
     linea11 : [31,32,33],
-    linea13 : [34,35,36],
+    linea12 : [34,35,36],
 
     docena1 : [1,2,3,4,5,6,7,8,9,10,11,12],
     docena2 : [13,14,15,16,17,18,19,20,21,22,23,24],

@@ -23,7 +23,7 @@ body {
     background-color: #15172b;
     border-radius: 20px;
     box-sizing: border-box;
-    height: 500px;
+    height: 560px;
     padding: 20px;
     width: 380px;
 }
@@ -343,10 +343,15 @@ footer span{
     color: #808097;
 }
 
+.btnlogAdmin{
+    text-decoration: none;
+    background-color: #7707a3;
+    color: white;
+}
+
 #panelAdmin{
     background-image: url(https://wallpaperaccess.com/full/16677.jpg);
     display:block;
-    
 }
 
 #botonesPA{

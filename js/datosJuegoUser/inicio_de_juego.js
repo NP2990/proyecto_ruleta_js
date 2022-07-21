@@ -33,3 +33,4 @@ function guardar_datos_usuario(){
     sessionStorage.setItem("Apellido jugador", apellido.value);
     sessionStorage.setItem("Edad jugador", edad.value);
 }
+
