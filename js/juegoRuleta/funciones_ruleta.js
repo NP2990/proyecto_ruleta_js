@@ -95,6 +95,30 @@ function alerta_retiro(){
         }
     }
 
+//CHEAT 10K MONEDAS
+cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () { 
+    Toast.fire({ 
+        icon: 'success', 
+        title: 'Cheat code activated'
+    }); 
+    balance+=10000; 
+    actualizar_info_juego() 
+});
+
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    background: '#082132',
+    color: 'white',
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+})
+
 // ACTUALIZAR DATOS DE JUEGO
 function actualizar_info_juego(){
     document.querySelector("#cantidad_jugadas span").innerText = cantidad_jugadas;
