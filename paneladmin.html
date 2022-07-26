@@ -13,10 +13,14 @@
 </head>
 
 <body id="panelAdmin">
+    <div id="botonesPA">
+        <button type="text" id="recuperar_datos_fetch" class="empezar btn_fetch" formaction="">LISTADO JUGADORES</button>
+        <a href="index.html"><button type="text" class="empezar btn_inicio" formaction="">Volver al inicio</button></a>
+    </div>
     <div class="containerPA">
         <div class="row">
             <div class="col">
-                <h2 class="titulo_admin">Listado de datos</h2>
+                <h2 class="titulo_admin">Listado de jugadores</h2>
                 <div class="my-6">
                     <table class="tabla_jugadores table" id="lista-jugadores">
                         <thead>
@@ -24,7 +28,7 @@
                                 <th class="header_tabla hNombre" scope="col">Nombre</th>
                                 <th class="header_tabla hApellido" scope="col">Apellido</th>
                                 <th class="header_tabla hEdad" scope="col">Edad</th>
-                                <th class="header_tabla hCantJug" scope="col">Cant. Jugadas</th>
+                                <th class="header_tabla hCantJug" scope="col">Cant.Jugadas</th>
                                 <th class="header_tabla hGanPerd" scope="col">Ganancia/Perdida</th>
                             </tr>
                         </thead>
@@ -35,11 +39,7 @@
             </div>
         </div>
     </div>
-    <div id="botonesPA">
-        <button type="text" id="recuperar_datos_user" class="empezar btn_admin" formaction="">DATOS CONSOLA</button>
-        <button type="text" id="recuperar_datos_fetch" class="empezar btn_fetch" formaction="">DATOS FETCH</button>
-        <a href="index.html"><button type="text" class="empezar btn_inicio" formaction="">Volver al inicio</button></a>
-    </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

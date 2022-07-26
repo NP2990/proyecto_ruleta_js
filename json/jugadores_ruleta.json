@@ -1,23 +1,65 @@
 [
   {
-    "nombre": "Nico",
-    "apellido": "Perez",
-    "edad": "31 pero arruinado",
+    "nombre": "Felipe",
+    "apellido": "Lotas",
+    "edad": "31",
     "cantjugadas": "3",
-    "gananciaperdida": "En la miseria"
+    "gananciaperdida": "-6000"
   },
   {
-    "nombre": "Juan",
-    "apellido": "De los Palotes",
-    "edad": "78 años",
+    "nombre": "Elvio",
+    "apellido": "Lento",
+    "edad": "78",
     "cantjugadas": "13",
-    "gananciaperdida": "+ 60.000"
+    "gananciaperdida": "+60000"
   },
   {
     "nombre": "Debora",
-    "apellido": "Chistefacil",
-    "edad": "En sus 30s",
+    "apellido": "Teste",
+    "edad": "45",
     "cantjugadas": "5",
-    "gananciaperdida": "Ni fu ni fa"
+    "gananciaperdida": "+1000"
+  },
+  {
+    "nombre": "Esteban",
+    "apellido": "Quito",
+    "edad": "66",
+    "cantjugadas": "17",
+    "gananciaperdida": "-2000"
+  },
+  {
+    "nombre": "Elba",
+    "apellido": "Gallo",
+    "edad": "78",
+    "cantjugadas": "10",
+    "gananciaperdida": "-12000"
+  },
+  {
+    "nombre": "Jacinta",
+    "apellido": "Pichimahuida",
+    "edad": "97",
+    "cantjugadas": "2",
+    "gananciaperdida": "+16000"
+  },
+  {
+    "nombre": "Alex",
+    "apellido": "Cremento",
+    "edad": "27",
+    "cantjugadas": "8",
+    "gananciaperdida": "-7000"
+  },
+  {
+    "nombre": "Pepita",
+    "apellido": "Lapistolera",
+    "edad": "28",
+    "cantjugadas": "5",
+    "gananciaperdida": "+3000"
+  },
+  {
+    "nombre": "Dolores",
+    "apellido": "Delano",
+    "edad": "38",
+    "cantjugadas": "18",
+    "gananciaperdida": "-13000"
   }
 ]

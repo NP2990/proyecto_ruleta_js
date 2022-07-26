@@ -33,14 +33,6 @@ function log_admin(){
     })
 }
 
-let btn_recuperar=document.getElementById('recuperar_datos_user');
-btn_recuperar.addEventListener('click', recuperar_datos_final);
-function recuperar_datos_final(){
-    let recuperar_cliente_final_json=localStorage.getItem("Cliente");
-    recuperar_cliente_final_json=JSON.parse(recuperar_cliente_final_json);
-    console.log(recuperar_cliente_final_json)
-}
-
 let btn_fetch=document.getElementById('recuperar_datos_fetch');
 btn_fetch.addEventListener('click', cargarJugador);
 const tabla = document.querySelector('#lista-jugadores tbody');

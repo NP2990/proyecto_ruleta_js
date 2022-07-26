@@ -5,14 +5,12 @@ function numero_ruleta(){
 
 // PREMIOS
 function premio_pleno(){
-    console.log("USUARIO GANA");
     ganancia_perdida+=(apuesta_estandar*37);
     balance+=(apuesta_estandar*37);
     actualizar_info_juego();
     alerta_gana()}
 
 function premio_docena_columna(){
-    console.log("USUARIO GANA");
     ganancia_perdida+=(apuesta_estandar*2);
     balance+=(apuesta_estandar*2);
     actualizar_info_juego();
@@ -20,7 +18,6 @@ function premio_docena_columna(){
 }
 
 function premio_linea(){
-    console.log("USUARIO GANA");
     ganancia_perdida+=(apuesta_estandar*17);
     balance+=(apuesta_estandar*17);
     actualizar_info_juego();
@@ -28,7 +25,6 @@ function premio_linea(){
 }
 
 function premio_simple(){
-    console.log("USUARIO GANA");
     ganancia_perdida+=apuesta_estandar;
     balance+=apuesta_estandar;
     actualizar_info_juego();
@@ -36,7 +32,6 @@ function premio_simple(){
 }
 
 function perdida_jugada(){
-    console.log("USUARIO PIERDE");
     ganancia_perdida-=apuesta_estandar;
     balance-=apuesta_estandar;
     actualizar_info_juego();
